@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="倪金海｜AI 应用 / Agent 工程师｜个人简历" name="description"/>
+<title>倪金海｜AI 应用 / Agent 工程师｜简历</title>
+<style>
+    :root {
+      --ink: #1b2d3b;
+      --muted: #64788a;
+      --accent: #13747b;
+      --accent-strong: #0d5a61;
+      --border: #d9e5e8;
+      --light: #f2f8f8;
+      --surface: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    body {
+      margin: 0;
+      padding: 26px;
+      background: #eaf0f2;
+      color: var(--ink);
+      font-family: "Noto Sans CJK SC", "Microsoft YaHei", "PingFang SC", sans-serif;
+      font-size: 10.1pt;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .sheet {
+      position: relative;
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      padding: 13mm 15.5mm 10.6mm;
+      background: var(--surface);
+      box-shadow: 0 16px 48px rgba(27, 45, 59, .14);
+    }
+    .top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; padding-bottom: 12px; border-bottom: 1.4px solid var(--accent); }
+    .who { flex: 1; }
+    .name-role { display: flex; align-items: baseline; gap: 13px; flex-wrap: wrap; }
+    h1 { margin: 0; color: #112d3d; font-size: 25pt; line-height: 1.14; letter-spacing: 1.2px; font-weight: 800; }
+    .name-role .line { height: 21px; width: 2px; background: #8cb3b5; display: inline-block; transform: translateY(3px); }
+    .role { font-size: 12.3pt; font-weight: 750; color: var(--accent-strong); letter-spacing: .1px; }
+    .tagline { color: #617a82; margin-top: 7px; font-size: 9.2pt; letter-spacing: .15px; }
+    .contact { flex-shrink: 0; text-align: right; color: var(--muted); font-size: 8.6pt; line-height: 1.8; padding-top: 2px; white-space: nowrap; }
+    .contact a { color: #355f6b; }
+    .contact .meta { font-weight: 550; color: #405b67; }
+
+    section { margin-top: 14px; break-inside: avoid; }
+    .section-heading { display: flex; align-items: center; gap: 8px; margin: 0 0 8px; font-size: 11.2pt; font-weight: 800; line-height: 1.25; color: #163647; }
+    .section-heading::before { content: ""; display: inline-block; width: 3px; height: 14px; background: var(--accent); border-radius: 2px; }
+    .section-heading::after { content: ""; height: 1px; background: var(--border); flex: 1; margin-left: 3px; }
+
+    .summary { margin-top: 14px; }
+    .summary p { margin: 3px 0 6px; font-size: 9.6pt; line-height: 1.65; }
+    .summary strong { color: #193f4b; font-weight: 750; }
+    .skills { background: var(--light); border: 1px solid #e0eeee; border-radius: 7px; padding: 9px 12px; font-size: 9.35pt; line-height: 1.7; }
+    .skills p { margin: 1px 0; }
+    .skills b { color: #24535c; }
+
+    .job { margin: 0 0 9px; break-inside: avoid; }
+    .job:last-child { margin-bottom: 0; }
+    .entry-header { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 2px; }
+    .entry-title { font-size: 10.15pt; font-weight: 750; color: #1d3b4b; }
+    .entry-title .position { color: #456977; font-weight: 550; }
+    .date { color: #698294; font-size: 8.7pt; white-space: nowrap; flex-shrink: 0; letter-spacing: .1px; }
+    ul { padding: 0; margin: 0; list-style: none; }
+    li { position: relative; padding-left: 12px; margin: 2px 0; font-size: 9.45pt; line-height: 1.57; }
+    li::before { position: absolute; left: 1px; top: .48em; content: ""; border-radius: 50%; width: 4px; height: 4px; background: #4d9295; }
+    li strong { color: #274c57; }
+
+    .research-headline { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 6px; }
+    .research-headline .section-heading { margin-bottom: 0; flex: 1; }
+    .research-when { font-size: 8.8pt; color: var(--muted); white-space: nowrap; }
+    .project { border-left: 2px solid #d7e9e9; padding-left: 10px; margin: 8px 0 9px 1px; break-inside: avoid; }
+    .project:last-child { margin-bottom: 0; }
+    .project-title-row { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin-bottom: 3px; }
+    .project-title { font-size: 10pt; font-weight: 800; color: #17394a; }
+    .project-sub { color: #587b83; font-weight: 550; }
+    .repo-link { font-size: 8.75pt; white-space: nowrap; font-weight: 650; }
+    .project p { margin: 0; font-size: 9.3pt; line-height: 1.6; }
+    .metric { font-weight: 800; color: #0a6c74; }
+    .research-note { color: #6f8390; font-size: 8.4pt; }
+
+    .edu-row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; font-size: 9.6pt; }
+    .edu-row b { color: #244454; }
+    .edu-row span { color: var(--muted); font-size: 8.8pt; }
+
+    @page { size: A4; margin: 0; }
+    @media print {
+      html, body { padding: 0; margin: 0; background: white; }
+      .sheet { margin: 0; box-shadow: none; width: 210mm; min-height: 297mm; }
+      a { text-decoration: none; }
+    }
+    @media screen and (max-width: 880px) {
+      body { padding: 0; background: white; }
+      .sheet { transform-origin: top left; box-shadow: none; margin: 0; }
+    }
+  
+/* v8: 删掉重复装饰，让每一行优先用于事实 */
+.tagline { display:none; }
+.top { padding-bottom: 10px; }
+.contact { line-height: 1.75; }
+section { margin-top: 17px; }
+.summary { margin-top: 16px; }
+.summary p { margin: 2px 0 0; font-size: 10pt; line-height: 1.65; }
+.skills { padding: 9px 11px; font-size: 9.7pt; line-height: 1.7; background: #f7fafb; border-color: #ebf0f2; }
+.job { margin-bottom: 11px; }
+.entry-title {font-size: 10.4pt;}
+li {font-size: 9.75pt; line-height: 1.63; margin: 3px 0;}
+.research-headline { margin-bottom: 4px; }
+.project { margin: 10px 0 10px 1px; }
+.project-title {font-size: 10.25pt;}
+.project p {font-size: 9.65pt; line-height: 1.64;}
+.edu-row {font-size: 9.85pt;}
+.project-title-link { color: #17394a; text-decoration: none; }
+.project-title-link::after { content:' ↗'; font-size: 8pt; color: #177882; font-weight: 500; }
+.project-title-link:hover { text-decoration: underline; }
+.project p { line-height: 1.57; }
+
+/* v9: 恢复旧版工作经历，保持精简版内容与青绿色单栏风格。 */
+body { background: #edf2f4; }
+.sheet { box-shadow: 0 14px 44px rgba(27, 45, 59, .11); }
+.who, .entry-title { min-width: 0; }
+.contact, .date, .research-when { font-variant-numeric: tabular-nums; }
+section { margin-top: 15px; }
+.section-heading { gap: 9px; }
+.skills { border-radius: 6px; }
+.skills p + p { margin-top: 3px; }
+.entry-header { margin-bottom: 3px; }
+.job { margin-bottom: 10px; }
+li { line-height: 1.6; }
+.project { margin-top: 9px; margin-bottom: 9px; border-left-color: #cee3e3; }
+.project-title-row { margin-bottom: 4px; }
+.project-title-link { text-underline-offset: 3px; text-decoration-thickness: 1px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+@media screen and (min-width: 881px) {
+  .sheet { border: 1px solid #e0e8eb; }
+}
+@media screen and (max-width: 720px) {
+  .sheet { width: 100%; min-height: 100vh; padding: 27px 22px 30px; }
+  .top { flex-direction: column; gap: 10px; padding-bottom: 13px; }
+  .contact { display: flex; flex-wrap: wrap; gap: 2px 16px; text-align: left; white-space: normal; padding-top: 0; }
+  .contact .meta { width: 100%; }
+  .name-role { gap: 10px; }
+  h1 { font-size: 24pt; }
+  .role { font-size: 11.3pt; }
+  .entry-header { flex-direction: column; align-items: flex-start; gap: 2px; }
+  .date { font-size: 8.7pt; }
+  .research-headline { flex-wrap: wrap; gap: 4px 10px; }
+  .project-title-row { display: block; }
+  .edu-row { flex-wrap: wrap; gap: 4px 12px; }
+}
+@media print {
+  .sheet { border: 0; box-shadow: none; }
+  a:focus-visible { outline: none; }
+  .project-title-link { color: #17394a; }
+}
+</style>
+</head>
+<body>
+<main class="sheet">
+<header class="top">
+<div class="who">
+<div class="name-role">
+<h1>倪金海</h1>
+</div>
+
+</div>
+<div class="contact">
+<div class="meta">3 年开发经验 · 本科</div>
+
+<div><a href="mailto:1540804315@qq.com">1540804315@qq.com</a></div>
+<div><a href="https://github.com/nijinhai">github.com/nijinhai</a></div>
+</div>
+</header>
+<section aria-labelledby="intro" class="summary">
+<h2 class="section-heading" id="intro">个人简介</h2>
+<p>具备 AI 产品从业务梳理、方案设计到全栈开发、部署试点的完整经验；面对不确定问题，习惯用原型和对照实验验证方案，再根据效果、成本和风险调整技术路线。</p>
+</section>
+<section aria-labelledby="skills-title">
+<h2 class="section-heading" id="skills-title">核心技术</h2>
+<div class="skills">
+<p><b>AI / 算法：</b>LLM 工作流、多模态 OCR、结构化输出、Python / PyTorch、程序合成</p>
+<p><b>工程：</b>TypeScript、React / Next.js、Node.js、Java、PostgreSQL / MySQL、Docker / Linux</p>
+</div>
+</section>
+<section aria-labelledby="work-title">
+    <h2 class="section-heading" id="work-title">工作经历</h2>
+    <article class="job">
+      <div class="entry-header"><div class="entry-title">绿叶农业 <span class="position">｜农业数字化产品规划（项目合作）</span></div><time class="date">2026.08 — 至今</time></div>
+      <ul><li>围绕农业技术问诊与数字农场方向开展业务梳理、平台定位和方案取舍；结合实际使用场景、上线合规与投入成本明确产品边界，推进平台原型与对外展示方案。</li></ul>
+    </article>
+    <article class="job">
+      <div class="entry-header"><div class="entry-title">河北石家庄木晨教育科技有限公司 <span class="position">｜全栈开发负责人</span></div><time class="date">2025.10 — 2026.08</time></div>
+      <ul>
+        <li>主导教育 AI 产品的技术方案、全栈开发、部署和小范围试点，统筹模型效果、调用成本与教师实际操作流程。</li>
+        <li><strong>木晨 100：</strong>设计答卷定位切割、OMR 识别、主观题多模态批改、异常复核及学情反馈闭环；覆盖 Web 教师端和家长小程序，在 <strong>2 所学校</strong>开展小范围试点。</li>
+        <li><strong>小晨优学：</strong>搭建「受约束模型决策 + 代码编排」AI 工作流，处理页面结构、合并判定、题目分析及讲解策略；结合条件二判、异常降级和教师复核，衔接错因分析、错题与练习生成。</li>
+      </ul>
+    </article>
+    <article class="job">
+      <div class="entry-header"><div class="entry-title">杭州仑谛信息技术服务有限公司 <span class="position">｜数据开发工程师（项目合作）</span></div><time class="date">2025.04 — 2025.10</time></div>
+      <ul><li>开发覆盖 <strong>34 所高校</strong>的数据采集与结构化处理流程，抽样同类页面自动生成 Selector 与清洗规则，使用 Python 异步任务、断点续采和失败重试适配异构网站。</li></ul>
+    </article>
+    <article class="job">
+      <div class="entry-header"><div class="entry-title">重庆幻色科技股份有限公司 <span class="position">｜Java 开发</span></div><time class="date">2023.12 — 2024.05</time></div>
+      <ul><li>参与企业管理系统开发与维护，负责 Java / Spring Boot 接口、数据处理及 Oracle 数据库相关开发。</li></ul>
+    </article>
+  </section>
+<section aria-labelledby="research-title">
+<div class="research-headline"><h2 class="section-heading" id="research-title">AI 研究项目</h2><span class="research-when">2026.09 — 至今</span></div>
+<article class="project">
+<div class="project-title-row"><a class="project-title project-title-link" href="https://github.com/nijinhai/search-gap" rel="noopener noreferrer" target="_blank">Search Gap <span class="project-sub">｜LLM × DreamCoder 多轮协作</span></a></div>
+<p>
+在 DreamCoder 中实现 LLM 提议、程序验证、失败反馈与多轮搜索闭环；在 <strong>257 道合成仿射任务</strong>的固定预算对照中，解题率由 <span class="metric">58.8% 提升至 75.9%</span>，但端到端耗时仍较高。
+</p>
+</article>
+<article class="project">
+<div class="project-title-row"><a class="project-title project-title-link" href="https://github.com/nijinhai/wsr-state-reorganization" rel="noopener noreferrer" target="_blank">WSR <span class="project-sub">｜Mamba-2 状态重组与预计算研究</span></a></div>
+<p>
+基于冻结的 <strong>Mamba2-130M</strong> 实现可微状态截取、编辑与续算，验证缓存一致性和梯度传播，完成 <strong>32K Token 长历史评价</strong>；另用计算预算匹配对照分析多轮预计算收益。
+</p>
+</article>
+<article class="project">
+<div class="project-title-row"><a class="project-title project-title-link" href="https://github.com/nijinhai/reusable-program-library" rel="noopener noreferrer" target="_blank">Reusable Program Library <span class="project-sub">｜程序合成与函数库复用</span></a></div>
+<p>
+实现从示例合成程序、验证入库到组合调用；冻结函数库在 <strong>156 道合成后续任务</strong>中解出 <span class="metric">108 道</span>，并对比逐题重新合成的任务覆盖与搜索成本。
+</p>
+</article>
+</section>
+<section aria-labelledby="edu-title">
+<h2 class="section-heading" id="edu-title">教育背景</h2>
+<div class="edu-row"><div><b>重庆邮电大学</b> ｜ 生物信息学 · 本科</div><span>2020 — 2024</span></div>
+</section>
+</main>
+</body>
+</html>

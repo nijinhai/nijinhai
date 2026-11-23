@@ -1,50 +1,72 @@
-# 倪金海 · nijinhai
+# 倪金海
 
-**全栈开发求职｜TypeScript · React / Next.js · Python**
+3 年开发经验 · 本科
 
-我希望参与从页面交互、应用接口到数据模型的完整开发，也关注 AI 能力如何接入可验证、可维护的软件系统。
+[1540804315@qq.com](mailto:1540804315@qq.com) · [github.com/nijinhai](https://github.com/nijinhai)
 
-重庆邮电大学 · 生物信息学。这里展示我的公开项目、实现方式和可核查的实验记录。
+## 个人简介
 
-## 技术与开发方向
+具备 AI 产品从业务梳理、方案设计到全栈开发、部署试点的完整经验；面对不确定问题，习惯用原型和对照实验验证方案，再根据效果、成本和风险调整技术路线。
 
-| 方向 | 项目中使用的技术 |
-| --- | --- |
-| 前端与应用 | TypeScript、React、Next.js、Tailwind CSS |
-| 数据与交互 | PostgreSQL、Prisma、React Hook Form、Zod、ECharts |
-| Python 与 AI 集成 | Python、模型 API 接入、执行验证、程序合成 |
-| 测试与交付 | Vitest、Python unittest、GitHub Actions、Docker |
+## 核心技术
 
-我关注清晰的数据流、输入校验、错误处理和可复现的交付。对于 AI 功能，我会同时检查实际输出、失败路径与调用成本。
+**AI / 算法：**LLM 工作流、多模态 OCR、结构化输出、Python / PyTorch、程序合成
 
-## 公开项目
+**工程：**TypeScript、React / Next.js、Node.js、Java、PostgreSQL / MySQL、Docker / Linux
 
-### [Search Gap · 程序搜索与大模型协作](https://github.com/nijinhai/search-gap)
+## 工作经历
 
-将外部模型的建议接入 DreamCoder，支持程序、草图、搜索权重和函数积木四类动作，通过执行验证和失败反馈完成多轮协作。
+### 绿叶农业 ｜农业数字化产品规划（项目合作）
 
-- **工程实现：** API 接入、结构化响应验证、预算控制、失败回退、结果记录与离线核验。
-- **可核查结果：** 257 道合成任务中，固定预算解题率从 58.8% 提升至 75.9%；49 项测试及 GitHub Actions 检查通过。
-- **评价边界：** 结果限于合成仿射任务；计入 API 延迟后总耗时更高，尚未验证跨领域泛化。
+2026.08 — 至今
 
-[项目说明](https://github.com/nijinhai/search-gap#readme) · [案例与取舍](https://github.com/nijinhai/search-gap/blob/main/docs/CASE_STUDY.md) · [自动检查](https://github.com/nijinhai/search-gap/actions)
+- 围绕农业技术问诊与数字农场方向开展业务梳理、平台定位和方案取舍；结合实际使用场景、上线合规与投入成本明确产品边界，推进平台原型与对外展示方案。
 
-### [Reusable Program Library · 可验证程序复用](https://github.com/nijinhai/reusable-program-library)
+### 河北石家庄木晨教育科技有限公司 ｜全栈开发负责人
 
-从输入输出样例出发进行符号程序合成，研究经过验证的函数库如何在有限搜索预算下组合与复用。
+2025.10 — 2026.08
 
-**展示重点：** Python 实现、程序正确性检查、模块复用与可复现实验。
+- 主导教育 AI 产品的技术方案、全栈开发、部署和小范围试点，统筹模型效果、调用成本与教师实际操作流程。
+- **木晨 100：**设计答卷定位切割、OMR 识别、主观题多模态批改、异常复核及学情反馈闭环；覆盖 Web 教师端和家长小程序，在 **2 所学校**开展小范围试点。
+- **小晨优学：**搭建「受约束模型决策 + 代码编排」AI 工作流，处理页面结构、合并判定、题目分析及讲解策略；结合条件二判、异常降级和教师复核，衔接错因分析、错题与练习生成。
 
-### [Wild Demo · Python / C++ 交互式模拟](https://github.com/nijinhai/wild-demo)
+### 杭州仑谛信息技术服务有限公司 ｜数据开发工程师（项目合作）
 
-使用 Python 与 C++ / pybind11 构建落沙和水模拟原型，提供交互绘制、调试控制台、结构化日志与性能观测。
+2025.04 — 2025.10
 
-**展示重点：** 跨语言集成、交互程序、调试工具和性能问题定位。
+- 开发覆盖 **34 所高校**的数据采集与结构化处理流程，抽样同类页面自动生成 Selector 与清洗规则，使用 Python 异步任务、断点续采和失败重试适配异构网站。
 
-## 我希望参与的工作
+### 重庆幻色科技股份有限公司 ｜Java 开发
 
-- 使用 TypeScript、React / Next.js 开发业务应用，围绕页面、接口与数据库完成需求。
-- 将 Python 或模型 API 接入应用，用明确的输入输出、验证和错误处理支撑功能。
-- 通过代码审查、自动测试和持续集成，让功能便于维护与交付。
+2023.12 — 2024.05
 
-全栈应用经历涉及的私有代码不在此公开；本页项目链接均指向公开仓库。
+- 参与企业管理系统开发与维护，负责 Java / Spring Boot 接口、数据处理及 Oracle 数据库相关开发。
+
+## AI 研究项目
+
+2026.09 — 至今
+
+### [Search Gap ｜LLM × DreamCoder 多轮协作](https://github.com/nijinhai/search-gap)
+
+在 DreamCoder 中实现 LLM 提议、程序验证、失败反馈与多轮搜索闭环；在 **257 道合成仿射任务**的固定预算对照中，解题率由 58.8% 提升至 75.9%，但端到端耗时仍较高。
+
+
+### [WSR ｜Mamba-2 状态重组与预计算研究](https://github.com/nijinhai/wsr-state-reorganization)
+
+基于冻结的 **Mamba2-130M** 实现可微状态截取、编辑与续算，验证缓存一致性和梯度传播，完成 **32K Token 长历史评价**；另用计算预算匹配对照分析多轮预计算收益。
+
+
+### [Reusable Program Library ｜程序合成与函数库复用](https://github.com/nijinhai/reusable-program-library)
+
+实现从示例合成程序、验证入库到组合调用；冻结函数库在 **156 道合成后续任务**中解出 108 道，并对比逐题重新合成的任务覆盖与搜索成本。
+
+
+## 教育背景
+
+**重庆邮电大学** ｜ 生物信息学 · 本科
+
+2020 — 2024
+
+---
+
+[简历 HTML 原文件](resume.html)
