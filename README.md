@@ -15,20 +15,21 @@
 ## AI Research & Experiments
 
 **Search Gap** — 外部建议如何帮助程序搜索？实现 LLM 提议、程序验证、失败反馈与多轮闭环。<br>
-**观察：**257 道合成仿射任务、每题 2,048 候选与 60 秒预算下，解题率 58.8% → 75.9%；含 API 延迟的总耗时更高，未验证跨领域泛化。[仓库与实验记录](https://github.com/nijinhai/search-gap)
+**观察：** 257 道合成仿射任务、每题 2,048 候选与 60 秒预算下，解题率 58.8% → 75.9%；含 API 延迟的总耗时更高，未验证跨领域泛化。[仓库与实验记录](https://github.com/nijinhai/search-gap)
 
 **WSR** — 额外计算能否形成可复用中间结果？实现冻结 Mamba-2 的可微状态编辑与续算，并独立构建预计算对照。<br>
-**观察：**小型规则图实验中，7 配置 × 3 配对种子；计算量匹配的宽单遍模型在留出组合上优于循环模型，尚无循环特有的泛化优势。沙盒未接入 Mamba。[仓库与实验记录](https://github.com/nijinhai/wsr-state-reorganization)
+**观察：** 小型规则图实验中，7 配置 × 3 配对种子；计算量匹配的宽单遍模型在留出组合上优于循环模型，尚无循环特有的泛化优势。沙盒未接入 Mamba。[仓库与实验记录](https://github.com/nijinhai/wsr-state-reorganization)
 
 **Reusable Program Library** — 验证后的函数能否减少重复搜索？实现从示例合成、验证入库到冻结函数库组合调用。<br>
-**观察：**3 种子合计 156 道合成后续任务解出 108 道；相对逐题重合成，按实验账本的增量操作调用少约 33.3%，也少解 27 题，体现成本与覆盖的取舍。[仓库与实验记录](https://github.com/nijinhai/reusable-program-library)
+**观察：** 3 种子合计 156 道合成后续任务解出 108 道；相对逐题重合成，按实验账本的增量操作调用少约 33.3%，也少解 27 题，体现成本与覆盖的取舍。[仓库与实验记录](https://github.com/nijinhai/reusable-program-library)
 
 ## 技术栈
 
-**AI / Research：**Python、PyTorch、LLM、Multimodal、Program Synthesis<br>
-**Engineering：**TypeScript、React、Next.js、Node.js、PostgreSQL、Docker、Linux
+**AI / Research：** Python、PyTorch、LLM、Multimodal、Program Synthesis<br>
+**Engineering：** TypeScript、React、Next.js、Node.js、PostgreSQL、Docker、Linux
 
 ## Resume & Contact
 
+- 在线简历：[HTML 阅读版](https://nijinhai.github.io/nijinhai/resume.html)
 - GitHub：[github.com/nijinhai](https://github.com/nijinhai)
 - 邮箱：[1540804315@qq.com](mailto:1540804315@qq.com)
