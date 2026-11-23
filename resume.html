@@ -4,8 +4,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="倪金海｜AI 应用 / Agent 工程师｜个人简历" name="description"/>
-<title>倪金海｜AI 应用 / Agent 工程师｜简历</title>
+<meta content="倪金海｜AI 应用开发、全栈工程与算法探索｜个人简历" name="description"/>
+<title>倪金海｜AI 应用与全栈工程｜简历</title>
 <style>
     :root {
       --ink: #1b2d3b;
@@ -159,6 +159,30 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
   .sheet { border: 0; box-shadow: none; }
   a:focus-visible { outline: none; }
   .project-title-link { color: #17394a; }
+}
+
+/* Static Pages, small screens, and paged output; resume facts stay unchanged. */
+@media screen {
+  .sheet { width: min(100%, 210mm); }
+  a, .entry-title, .project-title { overflow-wrap: anywhere; }
+}
+@media screen and (max-width: 880px) {
+  .sheet { min-height: 100vh; }
+}
+@media screen and (max-width: 720px) {
+  .summary p, .skills, li, .project p, .edu-row { font-size: 14px; line-height: 1.7; }
+  .section-heading { font-size: 16px; }
+  .entry-title, .project-title { font-size: 14.5px; }
+  .contact { font-size: 13px; }
+}
+@page { size: A4; margin: 10mm 13mm; }
+@media print {
+  html, body { padding: 0; margin: 0; background: #fff; }
+  .sheet { width: auto; min-height: 0; margin: 0; padding: 0; border: 0; box-shadow: none; }
+  section { break-inside: auto; }
+  .section-heading, .entry-header, .research-headline, .project-title-row { break-after: avoid-page; }
+  .job, .project, .skills, .edu-row { break-inside: avoid-page; page-break-inside: avoid; }
+  p, li { orphans: 2; widows: 2; }
 }
 </style>
 </head>
